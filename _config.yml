@@ -1,0 +1,13 @@
+menu:
+  #Archives: /archives
+  项目: /projects
+  关于: /aboutme
+#rss: /atom.xml
+
+archive_date_format: MMM DD
+fancybox: true
+
+duoshuo_shortname:
+
+google_analytics: UA-42596364-1
+favicon: /favicon.ico
