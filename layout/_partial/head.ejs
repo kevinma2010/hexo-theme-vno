@@ -51,6 +51,6 @@
     <% if (theme.rss) { %>
     <link rel="alternate" type="application/rss+xml" title="<%= config.title %>" href="<%= theme.rss %>">
     <% } %>
-    <link rel="canonical" href="<%= config.url %>" />
+    <link rel="canonical" href="<%= page.permalink || config.url %>" />
 
 </head>
