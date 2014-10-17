@@ -7,7 +7,13 @@
     %>
     <li>
       <h2 class="post-list__post-title post-title"><a href="<%- config.root %><%- link%>" title="link to post.title"><%= post.title%></a></h2>
-      <p class="excerpt"><%= strip_html(post.content).substring(0, 250)%>&hellip;</p>
+      <p class="excerpt">
+    <% if (post.excerpt){ %>
+      <%= strip_html(post.excerpt) %>
+    <% } else { %>
+      <%= strip_html(post.content).substring(0, 250)%>
+    <% } %>&hellip;
+      </p>
       <div class="post-list__meta"><%- partial('_partial/date',{post: post}) %> &#8226; <span class="post-list__meta--tags tags">于&nbsp;<%- partial('_partial/tags',{post: post}) %></span><a class="btn-border-small" href="<%- config.root %><%- link%>">继续阅读</a></div>
       <hr class="post-list__divider" />
     </li>
