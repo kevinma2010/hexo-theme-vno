@@ -1,0 +1,76 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <title>空谷幽兰</title>
+
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <meta name="description" content="想法, 记录">
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="空谷幽兰">
+    <meta name="twitter:description" content="想法, 记录">
+
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="空谷幽兰">
+    <meta property="og:description" content="想法, 记录">
+
+    <link rel="icon" type="image/png" href="<%= config.root %>images/favicon.png" />
+    <link href="<%= config.root %>images/favicon.png" rel="shortcut icon" type="image/png">
+    <link href="/apple-touch-icon-precomposed.png" rel="apple-touch-icon">
+
+    <link rel="stylesheet" type="text/css" href="<%= config.root %>css/vno.css?v=0fabbdcf94" />
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="<%= config.root %>css/tomorrow.css?v=0fabbdcf94">
+    <!-- <link href="http://cdn.bootcss.com/highlight.js/8.0/styles/monokai_sublime.min.css" rel="stylesheet">  -->
+    
+    <meta name="generator" content="Ghost 0.5" />
+<link rel="alternate" type="application/rss+xml" title="空谷幽兰" href="/rss/">
+<link rel="canonical" href="http://mlongbo.com/" />
+
+</head>
+<body class="home-template no-js">
+
+    <span class="mobile btn-mobile-menu">
+        <i class="fa fa-list btn-mobile-menu__icon"></i>
+        <i class="fa fa-angle-up btn-mobile-close__icon hidden"></i>
+    </span>
+
+    <%- partial('_partial/side-panel', {}) %>
+
+    <div class="content-wrapper">
+        <div class="content-wrapper__inner">
+            <%- body %>
+
+             <%- partial('_partial/footer', {}) %>
+        </div>
+    </div>
+
+    <script src="<%= config.root %>js/jquery.min.js?v=0fabbdcf94"></script>
+
+    <script type="text/javascript" src="<%= config.root %>js/main.js?v=0fabbdcf94"></script>
+    <script type="text/javascript" src="<%= config.root %>js/link-target-blank.js?v=0fabbdcf94"></script>
+
+    <!--<script src="http://yandex.st/highlightjs/8.0/highlight.min.js"></script>-->
+    <script src="http://cdn.bootcss.com/highlight.js/8.0/highlight.min.js"></script>  
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script>
+  /*(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-42596364-1', 'auto');
+  ga('send', 'pageview');*/
+
+</script>
+</body>
+</html>
