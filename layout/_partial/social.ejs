@@ -1,54 +1,62 @@
 <nav class="cover-navigation navigation--social">
   <ul class="navigation">
 
-
   <!-- Weibo-->
+  <% if (theme.social.weibo) { %>
   <li class="navigation__item">
-    <a href="http://weibo.com/onevcat" title="@onevcat 的微博" target="_blank">
+    <a href="<%= theme.social.weibo%>" title="我的微博" target="_blank">
       <i class='social fa fa-weibo'></i>
       <span class="label">Weibo</span>
     </a>
   </li> 
+<% } %>
 
   <!-- Github -->
+  <% if (theme.social.github) { %>
   <li class="navigation__item">
-    <a href="https://github.com/lenbo-ma" title="@lenbo-ma 的 Github" target="_blank">
+    <a href="<%= theme.social.github%>" title="查看我的GitHub主页" target="_blank">
       <i class='social fa fa-github'></i>
       <span class="label">Github</span>
     </a>
   </li>
+<% } %>
 
   <!-- Google Plus -->
+  <% if (theme.social["google-plus"]) { %>
   <li class="navigation__item">
-    <a href="https://www.google.com/+LenboMa" rel="author" title="Google+" target="_blank">
+    <a href="<%= theme.social['google-plus'] %>" rel="author" title="Google+" target="_blank">
       <i class='social fa fa-google-plus-square'></i>
       <span class="label">Google+</span>
     </a>
   </li>
+<% } %>
   
   <!-- Twitter -->
+  <% if (theme.social.twitter) { %>
   <li class="navigation__item">
-    <a href="http://twitter.com/onevcat" title="@onevcat" target="_blank">
+    <a href="<%= theme.social.twitter%>" title="上Twitter找我" target="_blank">
       <i class='social fa fa-twitter'></i>
       <span class="label">Twitter</span>
     </a>
   </li>
+<% } %>
   
-  <!-- RSS 
+<% if (theme.rss) { %>
   <li class="navigation__item">
-    <a href="{{@blog.url}}/rss/" title="RSS" target="_blank">
+    <a href="<%- theme.rss %>" title="RSS" target="_blank">
       <i class='social fa fa-rss'></i>
       <span class="label">RSS</span>
     </a>
-  </li>-->
-
-  <!-- Email -->
+  </li>
+<% } %>
+<% if (config.email) { %>
   <li class="navigation__item">
-    <a href="mailto:mlongbo@gmail.com" title="邮件联系我">
+    <a href="mailto:<%= config.email%>" title="邮件联系我" target="_blank">
       <i class='social fa fa-envelope'></i>
       <span class="label">Email</span>
     </a>
   </li>
+<% } %>
 
   </ul>
 </nav>

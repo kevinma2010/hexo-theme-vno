@@ -2,7 +2,13 @@ menu:
   #Archives: /archives
   项目: /projects
   关于: /aboutme
-#rss: /atom.xml
+rss: /atom.xml
+
+social:
+  weibo: 
+  github: https://github.com/lenbo-ma
+  twitter:
+  google-plus: https://www.google.com/+LenboMa
 
 archive_date_format: MMM DD
 fancybox: true
