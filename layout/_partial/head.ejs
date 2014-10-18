@@ -51,6 +51,10 @@
     <% if (theme.rss) { %>
     <link rel="alternate" type="application/rss+xml" title="<%= config.title %>" href="<%= theme.rss %>">
     <% } %>
+    
     <link rel="canonical" href="<%= page.permalink || config.url %>" />
 
+    <% if (theme.social["google-plus"]) { %>
+    <link rel="author" href="<%= theme.social['google-plus'] %>" />
+    <% } %>
 </head>
