@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <%
   var title = page.title;
-  title = title?title+' - '+config.title : config.title;
+  console.log(title);
+  title = title?(title+' | '+config.title) : (config.title+" | "+config.subtitle);
 
   var description = page.description || theme.description || config.description;
   if (!description) {
