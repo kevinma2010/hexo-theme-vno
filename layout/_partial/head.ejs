@@ -7,7 +7,7 @@
   var title = page.title;
   title = title?title+' - '+config.title : config.title;
 
-  var description = page.description || '';
+  var description = page.description || config.description;
   if (!description) {
     if (page.excerpt) {
       description = strip_html(page.excerpt);
