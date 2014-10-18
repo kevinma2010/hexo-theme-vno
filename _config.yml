@@ -3,12 +3,12 @@ menu:
   项目: /projects
   关于: /aboutme
 rss: /atom.xml
-
+description: 爱好电影、音乐和书籍，尤其喜爱许巍、李健及王小波。擅长Java，JavaScript，喜欢用NodeJs编写一些有趣的应用。关注互联网、科技、敏捷开发以及JavaNIO。
 social:
   weibo: 
   github: https://github.com/lenbo-ma
   twitter:
-  google-plus: https://www.google.com/+LenboMa
+  google_plus: https://www.google.com/+LenboMa
 
 logo: /images/logo.jpg
 background:

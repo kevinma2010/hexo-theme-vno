@@ -7,7 +7,7 @@
   var title = page.title;
   title = title?title+' - '+config.title : config.title;
 
-  var description = page.description || config.description;
+  var description = page.description || theme.description || config.description;
   if (!description) {
     if (page.excerpt) {
       description = strip_html(page.excerpt);
@@ -54,7 +54,7 @@
     
     <link rel="canonical" href="<%= page.permalink || config.url %>" />
 
-    <% if (theme.social["google-plus"]) { %>
-    <link rel="author" href="<%= theme.social['google-plus'] %>" />
+    <% if (theme.social["google_plus"]) { %>
+    <link rel="author" href="<%= theme.social['google_plus'] %>" />
     <% } %>
 </head>
