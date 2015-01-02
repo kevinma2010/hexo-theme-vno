@@ -13,7 +13,7 @@ social:
 logo: /images/logo.jpg
 background:
   cover: /images/background-cover.jpg
-  color: cover-purple
+  color: cover-disabled
 
 archive_date_format: MMM DD
 fancybox: true
