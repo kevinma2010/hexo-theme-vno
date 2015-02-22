@@ -9,13 +9,13 @@ hexo-vno
 
 将您的封面图片放到主题的 source/images/ 下，将图片文件改名为background-cover.jpg或修改_config.iml中background的cover字段值即可。您也可以改变封面的颜色。找到_config.iml中background的color字段值,然后替换成您需要的颜色即可。默认为您提供了七种选择：
 
-`cover-blue` - #2568A3
-`cover-green` - #156F78
-`cover-purple` - #493252
-`cover-red` - #E25440
-`cover-orange` - #FB9C50
-`cover-slate` - #3D4260
-`cover-disabled` - 透明
+* `cover-blue` - #2568A3
+* `cover-green` - #156F78
+* `cover-purple` - #493252
+* `cover-red` - #E25440
+* `cover-orange` - #FB9C50
+* `cover-slate` - #3D4260
+* `cover-disabled` - 透明
 
 ### 头像和简介
 
