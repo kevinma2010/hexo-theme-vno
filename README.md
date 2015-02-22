@@ -3,6 +3,16 @@ hexo-vno
 
 这个主题是修改自[onevat的vno](https://github.com/onevcat/vno), 它遵从简洁和响应式的设计风格，拥有一个独立的封面，易于集成的 Disqus 评论和多说系统，Google Analytics,字体图标以及多种颜色。
 
+## Demo Show
+
+[Demo: 我的博客](http://mlongbo.com)
+
+![主页封面](source/images/show/home.png)
+
+![文章列表](source/images/show/list.png)
+
+![文章内容](source/images/show/page.png)
+
 ## 封面
 
 ### 图片和颜色
