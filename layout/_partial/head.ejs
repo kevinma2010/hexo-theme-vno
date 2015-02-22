@@ -6,7 +6,7 @@
 <%
   var title = page.title;
   console.log(title);
-  title = title?(title+' | '+config.title) : (config.title+" | "+config.subtitle);
+  title = title?(title+' | '+config.title) : (config.subtitle?config.title+" | "+config.subtitle : config.title);
 
   var description = page.description || theme.description || config.description;
   if (!description) {
