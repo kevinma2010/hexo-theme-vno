@@ -1,5 +1,5 @@
 
-<header class="panel-cover <%= is_home()?'panel-cover--collapsed':''%>" style="background-image: url(<%- theme.background.cover %>)">
+<header class="panel-cover <%= !is_home()?'panel-cover--collapsed':''%>" style="background-image: url(<%- theme.background.cover %>)">
   <div class="panel-main">
     <div class="panel-main__inner panel-inverted">
     <div class="panel-main__content">
