@@ -43,8 +43,12 @@
     <link rel="stylesheet" type="text/css" href="<%= config.root %>css/tomorrow.css">
     <!-- <link href="http://cdn.bootcss.com/highlight.js/8.0/styles/monokai_sublime.min.css" rel="stylesheet">  -->
 
-    <link rel="icon" type="image/png" href="<%= config.root %>images/favicon.png" />
-    <link href="<%= config.root %>images/favicon.png" rel="shortcut icon" type="image/png">
+
+    <% if (theme.favicon) { %>
+    <link rel="icon" type="image/png" href="<%= config.root %><%= theme.favicon %>" />
+    <link href="<%= config.root %><%= theme.favicon %>" rel="shortcut icon" type="image/png">
+    <% } %>
+
     <link href="/apple-touch-icon-precomposed.png" rel="apple-touch-icon">
 
     <meta name="generator" content="hexo" />
