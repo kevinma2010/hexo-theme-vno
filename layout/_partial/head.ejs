@@ -44,9 +44,8 @@
     <!-- <link href="http://cdn.bootcss.com/highlight.js/8.0/styles/monokai_sublime.min.css" rel="stylesheet">  -->
 
 
-    <% if (theme.favicon) { %>
-    <link rel="icon" type="image/png" href="<%= config.root %><%= theme.favicon %>" />
-    <link href="<%= config.root %><%= theme.favicon %>" rel="shortcut icon" type="image/png">
+    <% if (theme.favicon){ %>
+    <link rel="icon" href="<%- theme.favicon %>">
     <% } %>
 
     <link href="/apple-touch-icon-precomposed.png" rel="apple-touch-icon">
