@@ -1,22 +1,22 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-<%
-  var title = page.title;
-  title = title?(title+' | '+config.title) : (config.subtitle?config.title+" | "+config.subtitle : config.title);
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <%
+    var title = page.title;
+    title = title ? (title + ' | ' + config.title) : (config.subtitle ? config.title + " | " + config.subtitle : config.title);
 
-  var description = page.description || theme.description || config.description;
-  if (!description) {
-    if (page.excerpt) {
-      description = strip_html(page.excerpt);
-    } else if (page.content) {
-      description = strip_html(page.content);
+    var description = page.description || theme.description || config.description;
+    if (!description) {
+        if (page.excerpt) {
+            description = strip_html(page.excerpt);
+        } else if (page.content) {
+            description = strip_html(page.content);
+        }
     }
-  }
-  description = description.substring(0, 200).replace(/^\s+|\s+$/g, '');
-  %>
+    description = description.substring(0, 200).replace(/^\s+|\s+$/g, '');
+    %>
     <title><%= title %></title>
     <meta name="renderer" content="webkit">
     <meta name="HandheldFriendly" content="True">
@@ -29,35 +29,30 @@
 
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="<%= title %>">
-    <meta name="twitter:description" content="<%= description %>"">
+    <meta name="twitter:description" content="<%= description %>">
 
     <meta property="og:type" content="article">
     <meta property="og:title" content="<%= title %>">
-    <meta property="og:description" content="<%= description %>"">
+    <meta property="og:description" content="<%= description %>">
 
-  <% if (config.author){ %>
+    <% if (config.author){ %>
     <meta name="author" content="<%= config.author %>">
-  <% } %>
-    <link rel="stylesheet" type="text/css" href="<%= config.root %>css/vno.css" />
-    <link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="<%= config.root %>css/tomorrow.css">
-    <!-- <link href="http://cdn.bootcss.com/highlight.js/8.0/styles/monokai_sublime.min.css" rel="stylesheet">  -->
-
+    <% } %>
+    <%- css('css/vno') %>
+    <%- css('//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css') %>
 
     <% if (theme.favicon){ %>
     <link rel="icon" href="<%- theme.favicon %>">
     <% } %>
 
-    <link href="/apple-touch-icon-precomposed.png" rel="apple-touch-icon">
-
-    <meta name="generator" content="hexo" />
+    <meta name="generator" content="hexo"/>
     <% if (theme.rss) { %>
     <link rel="alternate" type="application/rss+xml" title="<%= config.title %>" href="<%= theme.rss %>">
     <% } %>
-    
-    <link rel="canonical" href="<%= page.permalink || config.url %>" />
+
+    <link rel="canonical" href="<%= page.permalink || config.url %>"/>
 
     <% if (theme.social["google_plus"]) { %>
-    <link rel="author" href="<%= theme.social['google_plus'] %>" />
+    <link rel="author" href="<%= theme.social['google_plus'] %>"/>
     <% } %>
 </head>
