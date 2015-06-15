@@ -12,16 +12,13 @@
         <div class="content-wrapper__inner">
             <%- body %>
 
-             <%- partial('_partial/footer', {}) %>
+            <%- partial('_partial/footer', {}) %>
         </div>
     </div>
-    
-    <script src="http://cdn.bootcss.com/jquery/2.1.1/jquery.min.js"></script>
 
-    <script type="text/javascript" src="<%= config.root %>js/main.js"></script>
+    <%- js("http://cdn.bootcss.com/jquery/2.1.4/jquery.min.js") %>
+    <%- js("js/main.js") %>
 
-    <script src="http://cdn.bootcss.com/highlight.js/8.0/highlight.min.js"></script>  
-    <script>hljs.initHighlightingOnLoad();</script>
-   <%- partial('_partial/google_analytics') %>
+    <%- partial('_partial/google_analytics') %>
 </body>
 </html>

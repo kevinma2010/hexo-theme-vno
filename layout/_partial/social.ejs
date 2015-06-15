@@ -21,6 +21,16 @@
   </li>
 <% } %>
 
+<!-- Stack Overflow -->
+        <% if (theme.social.stack_overflow) { %>
+        <li class="navigation__item">
+            <a href="<%= theme.social.stack_overflow %>" title="Stack Overflow" target="_blank">
+                <i class='social fa fa-stack-overflow'></i>
+                <span class="label">Stack Overflow</span>
+            </a>
+        </li>
+        <% } %>
+
   <!-- Google Plus -->
   <% if (theme.social["google_plus"]) { %>
   <li class="navigation__item">
