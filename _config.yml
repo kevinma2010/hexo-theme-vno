@@ -1,16 +1,15 @@
 menu:
-  #Archives: /archives
-  项目作品: /projects
-  关于我: /aboutme
+#  项目作品: /projects
+#  关于我: /aboutme
 rss: /atom.xml
-description: 爱好电影、音乐和书籍，尤其喜爱许巍、李健及王小波。擅长Java，JavaScript，喜欢用NodeJs编写一些有趣的应用。关注互联网、科技、敏捷开发以及JavaNIO。
+# description: blog description
 social:
-  weibo: 
   github: https://github.com/lenbo-ma
-  stack_overflow: 
-  facebook: http://www.facebook.com/yang.desheng.me
   twitter: https://twitter.com/lenbo_
-  google_plus: https://www.google.com/+LenboMa
+#  weibo: 
+#  stack_overflow: 
+#  facebook: 
+#  google_plus: 
 
 page_comment: false
 logo: /images/logo2.jpg
@@ -21,7 +20,7 @@ background:
 archive_date_format: MMM DD
 fancybox: true
 
-duoshuo_shortname: 
+# duoshuo_shortname: 
 
-google_analytics: UA-42596364-1
+# google_analytics: 
 favicon: /images/favicon.png

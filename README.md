@@ -5,8 +5,6 @@ hexo-vno
 
 ## Demo Show
 
-[Demo: 我的博客](http://mlongbo.com)
-
 ![主页封面](source/images/show/home.png)
 
 ![文章列表](source/images/show/list.png)
@@ -59,18 +57,17 @@ git pull
 ```yml
 # menu子菜单可随意配置
 menu:
-  #Archives: /archives
-  项目作品: /projects
-  关于我: /aboutme
+#  项目作品: /projects
+#  关于我: /aboutme
 rss: /atom.xml
 # description配置内容会出现在meta标签中，因此会被搜索引擎抓取
-description: 爱好电影、音乐和书籍，尤其喜爱许巍、李健及王小波。擅长Java，JavaScript，喜欢用NodeJs编写一些有趣的应用。关注互联网、科技、敏捷开发以及JavaNIO。
+# description: blog description
 # 不填写的链接则不显示
 social:
-  weibo: http://weibo.com/p/1005052979439661
   github: https://github.com/lenbo-ma
   twitter: https://twitter.com/lenbo_
-  google_plus: https://www.google.com/+LenboMa
+  weibo: 
+  google_plus: 
 # 封面中的头像
 logo: /images/logo2.jpg
 # cover处填写背景图片, color处填写覆盖层的颜色样式名
@@ -81,9 +78,9 @@ background:
 archive_date_format: MMM DD
 
 # 多说的帐号名, 不配置则不启用
-duoshuo_shortname: mlongbo
+duoshuo_shortname: 
 
-google_analytics: UA-42596364-1
+# google_analytics: 
 # 网站的favicon图片
 favicon: /favicon.ico
 ```
